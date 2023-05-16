@@ -79,8 +79,14 @@
                 </executions>
             </plugin>
 	    <plugin>
-  		<groupId>org.mortbay.jetty</groupId>
+  		<groupId>org.eclipse.jetty</groupId>
   		<artifactId>jetty-maven-plugin</artifactId>
+  		<version>9.4.24.v20191120</version>
+  		<configuration>
+    			<stopPort>9090</stopPort>
+    			<stopKey>foo</stopKey>
+    			<stopWait>10</stopWait>
+  		</configuration>
 	    </plugin>
             <!-- CODE COVERAGE -->
             <plugin>

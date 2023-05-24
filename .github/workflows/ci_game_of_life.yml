@@ -20,7 +20,7 @@ jobs:
             experimental: true
 
     steps:
-      - uses: stCarolas/setup-maven@v4.3
+      - uses: stCarolas/setup-maven@v4.5
         with:
           maven-version: 3.5.4
       - uses: actions/setup-java@v3

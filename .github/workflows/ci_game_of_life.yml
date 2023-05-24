@@ -5,8 +5,8 @@ on: push
 jobs:
   game-of-life-test:
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
-     fail-fast: false
      matrix:
         java: [ '11', '14' ]
         os: [ubuntu-latest, windows-latest]
@@ -15,7 +15,6 @@ jobs:
           - java: 17
             os: ubuntu-latest
             experimental: true
-            continue-on-error: true
     steps:
       - uses: stCarolas/setup-maven@v4.5
         with:

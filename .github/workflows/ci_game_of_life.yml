@@ -15,10 +15,11 @@ jobs:
           - java: 17
             os: ubuntu-latest
             experimental: true
+            continue-on-error: true
           - java: 17
             os: windows-latest
             experimental: true
-
+            continue-on-error: true 
     steps:
       - uses: stCarolas/setup-maven@v4.5
         with:

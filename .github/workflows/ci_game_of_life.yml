@@ -10,10 +10,13 @@ jobs:
      matrix:
         java: [ '11', '14' ]
         os: [ubuntu-latest, windows-latest]
-        experimental: [false] 
+        experimental: [false]
         include:
           - java: 17
             os: ubuntu-latest
+            experimental: true
+          - java: 17
+            os: windows-latest
             experimental: true
     steps:
       - uses: stCarolas/setup-maven@v4.5

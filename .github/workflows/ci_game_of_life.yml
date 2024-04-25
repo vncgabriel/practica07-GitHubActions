@@ -1,6 +1,6 @@
 name: Game of life testing
 
-on: push
+on: [workflow_dispatch, push]
 
 jobs:
   game-of-life-test:

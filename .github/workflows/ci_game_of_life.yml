@@ -36,5 +36,3 @@ jobs:
         run: mvn test
       - name: Maven install
         run: mvn install
-      - name: Maven Jetty
-        run: mvn jetty:run

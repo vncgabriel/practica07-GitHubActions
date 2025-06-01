@@ -7,17 +7,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo
+      - name: Echooooooooo
         run: echo "Hello world"
         shell: bash
 
       - name: Display the path
-        run: |  
-                node --version
-                npm --version
-                pwd
-                cat /etc/os-release
+        run: |
+          node --version
+          npm --version
+          pwd
+          cat /etc/os-release
         shell: bash
-        
+
+      - name: Display the processor
+        run: |
+          import platform
+          print(platform.system())
+          print(platform.processor())
+        shell: python
+
 
 

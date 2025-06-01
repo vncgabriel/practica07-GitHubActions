@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echoooooo
+      - name: Echo
         run: echo "Hello world"
         shell: bash
 

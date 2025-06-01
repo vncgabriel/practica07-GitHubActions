@@ -4,11 +4,12 @@ on: push
 
 jobs:
   game-of-life-test:
-    runs-on: ubuntu-latest
-
+    runs-on: ${{ matrix.os }}
     strategy:
-      matrix:
-        java: [ '17', '21' ]
+     fail-fast: false
+     matrix:
+        java: [  '17' , '21' ]
+        os: [ ubuntu-latest , windows-latest ]
 
     steps:
       - uses: stCarolas/setup-maven@v5
